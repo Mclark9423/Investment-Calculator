@@ -13,14 +13,14 @@ function App() {
     }));
   };
 
-  const inputIsValid = userData.duration >=1
+  const inputIsValid = userData.duration >= 1
 
   return (
     <div className="center" >
       <UserInput updateUserData={updateUserData}></UserInput>
-      {!inputIsValid && ( <p className="center">Please enter valid input data</p>
+      {!inputIsValid && (<p className="center">Please enter valid input data</p>
       )}
-      {inputIsValid && <Results resultData={userData}></Results> }
+      {inputIsValid && <Results resultData={userData}></Results>}
     </div>
   )
 }
